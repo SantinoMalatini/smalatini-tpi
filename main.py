@@ -34,7 +34,7 @@ def ordenar_datos_burbuja(datos):
             tupla_j = tuple(datos_ordenados[j][:4])
             tupla_j_next = tuple(datos_ordenados[j+1][:4])
             
-            if tupla_j > tupla_j_next:
+            if tupla_j < tupla_j_next:
                 datos_ordenados[j], datos_ordenados[j+1] = datos_ordenados[j+1], datos_ordenados[j]
                 
     return datos_ordenados
